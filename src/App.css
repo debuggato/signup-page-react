@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap");
+
+.App {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+.App .WelcomePage {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.HeaderWrapper {
+  text-align: center;
+}
+
+.HeaderWrapper h1 {
+  margin: 0;
+}
+
+.HeaderWrapper p {
+  font-size: 19px;
+  color: #6e6e6e;
+  font-weight: 500;
+}
+
+.FormSection {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Caption {
+  font-size: 14px;
+}
+
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 90px;
+}
+
+form {
+  width: 100%;
+}
+
+.Error {
+  color: #e40000;
+  font-size: 12px;
+}
+
+.Field {
+  height: 100px;
+}
+
+.Field label {
+  margin-bottom: 3px;
+  display: block;
+}
+
+.Field input {
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid #bababa;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.PasswordWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.PasswordWrapper input {
+  padding-right: 50px;
+}
+
+.PasswordWrapper i {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+.Separator {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.Separator hr {
+  width: 200px;
+  background-color: #9f9f9f;
+  height: 0;
+}
+
+.Separator span {
+  color: #9f9f9f;
+  font-size: 14px;
+}
+
+.PolicyClaim {
+  color: #7f7f7f;
+  margin: 20px;
+}
+
+a:hover {
+  color: #4f7acf;
+}
+
+.Banner {
+  background-color: #4285f4;
+  display: none;
+}
+
+.SubmitBtn {
+  background-color: #4f7acf;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid #4f7acf;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.SubmitBtn:hover {
+  background-color: #2156bd;
+}
+
+.GoogleBtn {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: #1f1f1f;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.GoogleBtn:hover {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: 1200px) {
+  .Banner {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Transition-ExitActive {
+    opacity: 0;
+  }
+
+  .Transition-ExitDone {
+    display: none;
+  }
+
+  .Transition-EnterDone {
+    display: block;
+  }
+}
