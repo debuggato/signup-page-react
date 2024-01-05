@@ -16,7 +16,7 @@ function SignupPage() {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm<Inputs>()
+  } = useForm<Inputs>({ mode: 'onChange' })
 
   const bannerRef = useRef(null)
   const formRef = useRef(null)
