@@ -158,6 +158,18 @@ a:hover {
   background-color: #e5e5e5;
 }
 
+.Transition-ExitActive {
+  opacity: 0;
+}
+
+.Transition-ExitDone {
+  display: none;
+}
+
+.Transition-EnterDone {
+  display: block;
+}
+
 @media (min-width: 1200px) {
   .Banner {
     display: flex;
