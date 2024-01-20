@@ -71,18 +71,20 @@ function SignupPage() {
                 <input
                   type="text"
                   id="name"
+                  data-testid="name"
                   className={classNames({
                     "ErrorField": errors.name
                   })}
                   {...register("name", { required: true })}
                 />
-                {errors.name && <span className='Error'>This field is required</span>}
+                {errors.name && <span data-testid="error-name" className='Error'>This field is required</span>}
               </div>
               <div className='Field'>
                 <label htmlFor="email">Email*</label>
                 <input
                   type="email"
                   id="email"
+                  data-testid="email"
                   className={classNames({
                     "ErrorField": errors.email
                   })}
@@ -97,7 +99,7 @@ function SignupPage() {
                     }
                   })}
                 />
-                {errors.email?.message && <span className='Error'>{errors.email.message}</span>}
+                {errors.email?.message && <span data-testid="error-email" className='Error'>{errors.email.message}</span>}
               </div>
               <div className='Field'>
                 <label htmlFor="password">Password*</label>
@@ -105,6 +107,7 @@ function SignupPage() {
                   <input
                     type={showPassword ? 'text' : 'password'}
                     id="password"
+                    data-testid="password"
                     className={classNames({
                       "ErrorField": errors.password
                     })}
@@ -122,9 +125,13 @@ function SignupPage() {
                     />
                   )}
                 </div>
-                {errors.password && <span className='Error'>This field is required</span>}
+                {errors.password && <span data-testid="error-password" className='Error'>This field is required</span>}
               </div>
-              <button className='SubmitBtn' type="submit">
+              <button
+                className='SubmitBtn'
+                type="submit"
+                data-testid="signupBtn"
+              >
                 <Oval
                   visible={isLoading}
                   height={19}
