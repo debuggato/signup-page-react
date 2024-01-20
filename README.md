@@ -1,3 +1,5 @@
-# Sign up page with React and React Hook Form
+# Sign up page con React e React Hook Form
 
-This is a tutorial made for Youtube. You can find the related video at this url: https://youtu.be/xAuJgW6Osxo
+Questo è un tutorial fatto per il canale Youtube di Buggato.
+Trovi il video ASMR della signup page a questo url: https://youtu.be/xAuJgW6Osxo
+Il video sull'implementazione degli unit tests a questo url: https://youtu.be/pfl8962RTpo
